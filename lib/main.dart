@@ -26,39 +26,30 @@ class _XylophoneState extends State<Xylophone> {
     );
   }
 
+  Expanded soundbutton({Color? col, int? number}) {
+    return Expanded(
+      child: GestureDetector(
+        onTap: () {
+          playsound(number!);
+        },
+        child: Container(
+          color: col,
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Expanded(
-          child: GestureDetector(
-            onTap: () {
-              AssetsAudioPlayer.newPlayer().open(
-                Audio("assets/note1.wav"),
-                autoStart: true,
-                showNotification: true,
-              );
-            },
-            child: Container(
-              color: Colors.red,
-            ),
-          ),
-        ),
-        Expanded(
-          child: GestureDetector(
-            onTap: () {
-              playsound(3);
-            },
-            child: Container(
-              color: Colors.yellow,
-            ),
-          ),
-        ),
-        OutlinedButton(
-            onPressed: () {},
-            child: Container(
-              color: Colors.black,
-            ))
+        soundbutton(col: Colors.red, number: 1),
+        soundbutton(col: Colors.orange, number: 2),
+        soundbutton(col: Colors.yellow, number: 3),
+        soundbutton(col: Colors.green, number: 4),
+        soundbutton(col: Colors.teal, number: 5),
+        soundbutton(col: Colors.blue, number: 6),
+        soundbutton(col: Colors.purple, number: 7),
       ],
     );
   }
