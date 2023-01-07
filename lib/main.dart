@@ -4,6 +4,10 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     home: Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        title: Text('Xylophone'),
+      ),
       backgroundColor: Colors.black,
       body: Xylophone(),
     ),
