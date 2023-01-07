@@ -19,10 +19,10 @@ class Xylophone extends StatefulWidget {
 
 class _XylophoneState extends State<Xylophone> {
   void playsound(int no) {
-    AssetsAudioPlayer.newPlayer().open(
+    final assetsAudioPlayer = AssetsAudioPlayer();
+
+    assetsAudioPlayer.open(
       Audio("assets/note$no.wav"),
-      autoStart: true,
-      showNotification: true,
     );
   }
 
