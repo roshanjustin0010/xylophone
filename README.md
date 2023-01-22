@@ -1,16 +1,18 @@
 # xylophone_app
 
-A new Flutter project.
+A new Flutter project which can use in free time for playing different tones while we are bored.
 
-## Getting Started
+it uses
 
-This project is a starting point for a Flutter application.
+audio player package
+clean code 
+....
 
-A few resources to get you started if this is your first Flutter project:
+if cloning 
+run 'flutter pub get' before running to get the packages from pubspec
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+in this each colour represent different tone
+
+
+<img width="1512" alt="xylophone" src="https://user-images.githubusercontent.com/77222525/213936584-b6d1e010-3a67-43ea-9919-7e89bbf8d0f5.png">
